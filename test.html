@@ -1,0 +1,71 @@
+
+<html>
+<head>
+    <title>login page</title>
+    <meta name="viewport" content="width= device-width" initial-scale="1" media="all">
+    <script src="web/jquery-3.1.1.js"></script>
+    <link rel="stylesheet" href="web/bootstrap.min.css">
+    <script src="web/bootstrap.min.js"></script>
+</head>
+<style>
+    body{
+        background-color: #a6e1ec;
+    }
+</style>
+<body>
+<div class="container">
+<header>
+    <div class="navbar navbar-inverse" style="background-color: #d0e9c6">
+        <ul class="nav nav-tabs nav-justified">
+            <li><a href=""><b>Home</b></a></li>
+            <li><a href=""><b> User</b></a></li>
+            <li><a href=""><b> Logout</b></a></li>
+        </ul>
+    </div>
+</header>
+    <div class="modal-content modal-body">
+        <div align="center">
+        <div class="alert-warning">
+            <h3>${message}</h3>
+        </div>
+
+        <form class="form" method="post" action="login">
+            <input type="hidden" name="page" value="login">
+            <table class="table-responsive ">
+                <tr>
+                    <td>User Name:</td><td><input type="text" name="username" id="user"  required> </td>
+                    <td><label id="Userlabel"></label></td>
+                </tr>
+                <tr>
+                    <td><label id="labelUser"></label></td>
+                    <td><label id="Passwordlabel"></label></td>
+                </tr>
+
+                <tr>
+                    <td>Password:</td><td><input type="password" name="password" id="pass"  required><td>
+                </tr>
+                <tr>
+                    <td><label id="labelPass"></label></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="right"><input type="submit" value="Login"></td>
+                </tr>
+                <tr>Student Name :
+                <select>
+                    <option>a</option>
+                    <option>b</option>
+                    <option>c</option>
+
+                </select>
+                </tr>
+            </table>
+        </form>
+        </div>
+    </div>
+<footer>
+hdfkalshdfka
+</footer>
+</div>
+</body>
+</html>
